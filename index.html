@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Unity-滑稽破坏王2148</title>
+  <title>Unity-滑稽破坏王2153</title>
   <script type="text/javascript">
     function Reset() {
       var canvas = document.getElementById("#canvas");
@@ -13,11 +13,13 @@
       console.log(canvas.width);
     } 
   </script>
-  </head>
+</head>
 
-<body style="text-align: center">
+<body onresize="Reset()" ,scroll=no, style="overflow:hidden">
   <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: #231F20"></canvas>
   <script src="Build/build.loader.js"></script>
+  <div id="gameContainer" style="width: 100%; height: 100%;margin:auto"></div>
+
   <script>
     createUnityInstance(document.querySelector("#unity-canvas"), {
       dataUrl: "Build/build.data",
@@ -31,9 +33,7 @@
       // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
     });
   </script>
-  <div class="webgl-content" style="width: 100%; height: 100%">
-    <div id="gameContainer" style="width: 100%; height: 100%"></div>
-  </div>
+
 </body>
 
 </html>
