@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>6 4 17 20 | 滑稽破坏王</title>
+    <title>6 4 17 24 | 滑稽破坏王</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -77,10 +77,10 @@
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         container.className = "unity-mobile";
-        config.devicePixelRatio = 1;
+        //config.devicePixelRatio = 1;
         canvas.style.width = "960px";
         canvas.style.height = "540px";
-        canvas.css('transform' , 'rotate(90deg)');
+        canvas.style.transform = 'rotate(90deg)';
        
       } else {
         canvas.style.width = "960px";
