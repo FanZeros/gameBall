@@ -101,6 +101,7 @@
           }
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
+            if (isPhone)container.style.transform = 'rotate(90deg)';
           };
         }).catch((message) => {
           alert(message);
