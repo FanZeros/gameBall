@@ -247,7 +247,7 @@
         const d = new Date(str);
         return isNaN(d.getTime()) ? null : d;
       };
-      const today = new Date();
+      const today = new Date("2025-8-1");
       const dUpdated = parseDate(url.searchParams.get('updated')) || today;
       const dEffective = parseDate(url.searchParams.get('effective')) || dUpdated;
       document.getElementById('js-updated').textContent = fmtCNDate(dUpdated);
