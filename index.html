@@ -242,7 +242,7 @@
       }
 
       // ======= 日期：URL 可传 ?updated=2025-08-08&effective=2025-08-10；否则今日 =======
-      const fmtCNDate = (d) => `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日`;
+      const fmtCNDate = (d) => `${Math.max(d.getFullYear(),2025)}年${d.getMonth()+1}月${d.getDate()}日`;
       const parseDate = (str) => {
         const d = new Date(str);
         return isNaN(d.getTime()) ? null : d;
