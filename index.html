@@ -248,8 +248,8 @@
         return isNaN(d.getTime()) ? null : d;
       };
       const today = new Date("2025-8-1");
-      const dUpdated = parseDate(url.searchParams.get('updated')) || today;
-      const dEffective = parseDate(url.searchParams.get('effective')) || dUpdated;
+      const dUpdated = parseDate(url.searchParams.get('updated')) || "2025年8月1日";
+      const dEffective = parseDate(url.searchParams.get('effective')) || "2025年8月1日";
       document.getElementById('js-updated').textContent = fmtCNDate(dUpdated);
       document.getElementById('js-effective').textContent = fmtCNDate(dEffective);
 
